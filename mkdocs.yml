@@ -226,10 +226,10 @@ nav:
 
     #  Leetcode
 
-site_name: 小角龙的学习记录
-site_url: https://zhang-each.github.io/My-CS-notebook/
-repo_name: Zhang-Each/My-CS-notebook
-repo_url: https://github.com/zhang-each/My-CS-notebook/
+site_name: TK 的学习记录
+site_url: https://tkzzzzzz6.github.io/My-CS-Notebook/
+repo_name: tkzzzzzz6/My-CS-Notebook
+repo_url: https://github.com/tkzzzzzz6/My-CS-Notebook/
 
 theme:
   name: material
@@ -256,7 +256,7 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true # link for each title
-      slugify: !!python/name:pymdownx.slugs.uslugify # enable Unicode link
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {} # enable Unicode link
   - admonition
   - abbr
   - attr_list
@@ -273,8 +273,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -298,14 +298,8 @@ markdown_extensions:
   - pymdownx.tilde
 copyright: '本页面的全部内容在 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a> 协议之条款下提供，附加条款亦可能应用。'
 
-extra_css:
-  - 'from_oi_wiki/css/extra.css?v=13'
-  - css/status.css
-
 extra_javascript:
-  - 'from_oi_wiki/js/extra.js'
   # - js/mathjax.js # 支持数学公式，ref : https://squidfunk.github.io/mkdocs-material/reference/mathjax
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js # 支持表格排序
   # - js/tablesort.js

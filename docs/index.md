@@ -22,10 +22,10 @@ statistics: true
     - <span id="busuanzi_container_site_pv">总访问次数：<span id="busuanzi_value_site_pv"></span>次
     
 ???+ example "推荐阅读"
-    - [深度学习与神经网络入门](https://zhang-each.github.io/My-CS-Notebook/CS231N/)
-    - [图机器学习与图神经网络](https://zhang-each.github.io/My-CS-Notebook/CS224W/)
-    - [基于深度学习的自然语言处理](https://zhang-each.github.io/My-CS-Notebook/CS224N/)
-    - [操作系统](https://zhang-each.github.io/My-CS-Notebook/OS/)
+    - [深度学习与神经网络入门](CS231N/index.md)
+    - [图机器学习与图神经网络](CS224W/index.md)
+    - [基于深度学习的自然语言处理](CS224N/index.md)
+    - [操作系统](OS/index.md)
     
 
 -------------------------------------------------------
