@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Papers-old/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B025%EF%BC%9ASMORE%E5%A4%A7%E8%A7%84%E6%A8%A1%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%B3%BB%E7%BB%9F.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 论文阅读笔记24：SMORE大规模知识图谱系统
 
 > 论文《[SMORE: KNOWLEDGE GRAPH COMPLETION AND MULTI-HOP REASONING IN MASSIVE KNOWLEDGE GRAPHS](https://arxiv.org/pdf/2110.14890v2.pdf)》的阅读笔记，该论文提出了在超大规模数据量的场景下进行知识图谱的补全河推理的方法，从算法和系统机制设计两个层面解决了超大规模数据的情况下的知识图谱补全河多跳推理问题。

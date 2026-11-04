@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/CS231N/Stanford-CS231N-Assignment%E6%9C%AD%E8%AE%B01%EF%BC%9AkNN%E5%92%8C%E7%BA%BF%E6%80%A7%E5%88%86%E7%B1%BB%E5%99%A8.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # Stanford-CS231N-Assignment札记1：kNN和线性分类器
 
 

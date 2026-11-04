@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/ML/%E7%BB%9F%E8%AE%A1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A005%EF%BC%9A%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BASVM.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 统计机器学习05：支持向量机SVM和Kernel方法
 
 

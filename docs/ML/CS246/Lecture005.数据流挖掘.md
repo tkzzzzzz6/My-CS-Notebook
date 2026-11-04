@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/ML/CS246/Lecture005.%E6%95%B0%E6%8D%AE%E6%B5%81%E6%8C%96%E6%8E%98.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 数据流挖掘
 
 ## 数据流

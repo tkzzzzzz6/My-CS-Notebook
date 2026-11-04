@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/CS231N/Stanford-CS231N-Assignment%E6%9C%AD%E8%AE%B08%EF%BC%9A%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E4%B8%8E%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # Stanford-CS231N-Assignment札记8：自监督学习与课程总结
 
 > Stanford2021年春季课程CS231N:Convolutional Neural Networks for Visual Recognition的一些作业笔记，这门课的作业围绕视觉相关的任务，需要从底层手动实现一大批经典机器学习算法和神经网络模型，本文是作业的第八部分，包含了自监督学习和整个课程的总结

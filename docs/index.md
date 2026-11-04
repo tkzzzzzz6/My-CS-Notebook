@@ -1,31 +1,36 @@
 ---
+title: 主页
+date: '2026-11-04'
+tags:
+- 学习路线
+- AI工程
 statistics: true
 ---
 
-# 小角龙的学习笔记
+# TK 的学习记录
 
-???+ info "欢迎光临"
-    - 平时会更新一些学习CS各方向内容的笔记，欢迎关注我的[GitHub账号](https://github.com/Zhang-Each)和[个人主页](https://zhang-each.github.io/)!
+这里记录 AI Infra、Agent 和多模态 Pipeline 的学习、实验与工程分析。
 
-???+ tip "新文章预印本"
-    - NativE: Multi-modal Knowledge Graph Completion in the Wild. [SIGIR 2024](https://arxiv.org/pdf/2406.17605)
-    - Tokenization, Fusion, and Augmentation: Towards Fine-grained Multi-modal Entity Representation. [AAAI 2025](https://arxiv.org/pdf/2404.09468)
-    - Knowledge Graphs Meet Multi-Modal Learning: A Comprehensive Survey. [ArXiv](https://arxiv.org/abs/2402.05391)
+当前主线是：先建立推理与数据处理的性能基线，再把多模态数据链路和可恢复的 Agent 工作流接起来。每个阶段都用可复现的实验和评测说明结果。
 
-???+ Warning "施工中！" 
-    <center>旧版博客内容已经完全转移到当前的笔记本中，后续各类博客只在现在的笔记本中更新。</center>
+## 从这里开始
 
-???+ info inline "博客总览"
-    - 笔记总数：{{pages}}篇
-    - 总字数：{{words}}字
-    - <span id="busuanzi_container_site_uv">访客总人数：<span id="busuanzi_value_site_uv"></span>人
-    - <span id="busuanzi_container_site_pv">总访问次数：<span id="busuanzi_value_site_pv"></span>次
-    
-???+ example "推荐阅读"
-    - [深度学习与神经网络入门](CS231N/index.md)
-    - [图机器学习与图神经网络](CS224W/index.md)
-    - [基于深度学习的自然语言处理](CS224N/index.md)
-    - [操作系统](OS/index.md)
-    
+| 栏目 | 关注的问题 | 入口 |
+| --- | --- | --- |
+| AI Infra | 模型服务的瓶颈在哪里，如何测量和优化 | [推理、训练与性能分析](AIInfra/index.md) |
+| Agent | 工具调用、状态、恢复和评测如何落地 | [Agent 工程](Agents/index.md) |
+| 多模态 Pipeline | 图片、文档与模型之间如何形成可靠数据链路 | [数据与推理流水线](Multimodal/index.md) |
+| 实验项目 | 如何用一个端到端项目验证三条方向 | [多模态文档分析 Agent](Projects/index.md) |
+| 基础与参考 | 遇到具体问题时补齐系统和模型基础 | [历史资料索引](Foundations/index.md) |
 
--------------------------------------------------------
+## 建议的学习节奏
+
+[查看 12 周学习路线](2026-11-04-ai-infra-agent-roadmap.md)。路线按每周 8–12 小时规划，可按已有基础和计算资源调整。各阶段写的是计划产出，实验结果在实际完成后补充。
+
+???+ info "站点统计"
+    - 页面总数：{{pages}}，包含保留的历史参考资料。
+    - 总字数：{{words}}。
+
+## 资料来源
+
+本项目由上游 CS 笔记库整理而来。保留的旧文章已标注来源，原文中的个人叙述和署名属于对应作者。[站点与资料来源](about.md)。

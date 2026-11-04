@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Papers/06-%E5%A4%A7%E6%A8%A1%E5%9E%8BAlignment.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 大语言模型的Alignment
 > 我们发布了新的大模型对齐论文 Knowledgeable Preference Alignment for LLMs in Domain-specific Question Answering，ArXiv链接是[https://arxiv.org/abs/2311.06503](https://arxiv.org/abs/2311.06503) 
 

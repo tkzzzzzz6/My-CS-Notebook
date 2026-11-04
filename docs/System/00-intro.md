@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/System/00-intro.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 0.计算机基本知识
 
 - 计算机系统原理(feat Mr.Lou)荣获感动软工十大垃圾课前三名，很喜欢网友的一句话：我超，原！

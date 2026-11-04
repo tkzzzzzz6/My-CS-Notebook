@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/DB/CMU15-445/lab/CMU15-445-Project2.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # CMU15-445-Project2
 
 > 上一个Project中，我们实现了Bustub中的Buffer Pool模块，实现了包括LRU置换算法，Buffer Manager和并行Buffer等内容，而这次的Project2需要我们自己实现Bustub中的Index模块

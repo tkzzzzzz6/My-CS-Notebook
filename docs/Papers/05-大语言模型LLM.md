@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Papers/05-%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLM.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 大语言模型Large Language Model
 > 最近半年以来大语言模型(Large Language Model)的技术随着ChatGPT的成功引起了广泛的关注，这篇博客就来整理一下和LLM有关的各项技术以及一些热门的大语言模型
 

@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Networking/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C3-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%26MAC.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 ## Chapter3. Data link layer
 
 ### 3.1 基本概念

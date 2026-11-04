@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/DB/MIT6.830/MIT6.830-lab1-SimpleDB%20Overview.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # MIT6.830-lab1：SimpleDB Overview
 
 > 这是MIT6.830Database Systems课程的Project实现记录，这门课的内容和常见的数据系统课程基本一致，而课程Project是用Java实现一个名为SimpleDB的简单数据库系统，一共有6个lab

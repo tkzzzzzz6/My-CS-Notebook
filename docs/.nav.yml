@@ -1,6 +1,5 @@
-# 保留现有分类、显示名称和顺序；glob 自动补充对应目录中的新文章。
-# 已列出的文章不会被 glob 重复加入。新文章优先使用正文中的 title 或一级标题。
-# 特殊排序/名称在这里调整，常规发文只需新增 docs 下的 Markdown 文件。
+# 主线：AI Infra、Agent、多模态 Pipeline；旧资料集中在“基础与参考”。
+# 现有名称和固定顺序保留在规则中，新文章及子目录由 glob 自动补充。
 sort:
   type: natural
   by: path
@@ -8,38 +7,123 @@ sort:
 nav:
 - 🏡 主页:
   - index.md
-  - 关于我👨‍🎓: about.md
-  - 新论文宣传🔥:
-    - 01.(ACM MM2024)如何让大语言模型更好地完成知识推理: Mypapers/01-如何让大语言模型更好地完成知识推理.md
-    - 02.(ACL2024)大语言模型的知识偏好对齐: Mypapers/02-大语言模型的知识偏好对齐.md
-    - 03.(COLING2024)不平衡场景下的多模态知识图谱补全: Mypapers/03-不平衡场景下的多模态知识图谱补全.md
-    - 04.(SIGIR2024)复杂场景下的多模态知识图谱补全: Mypapers/04-复杂场景下的多模态知识图谱补全.md
-    - 05.(AAAI2025)基于模态分词的细粒度实体表示学习框架: Mypapers/05-基于模态分词的细粒度实体表示学习框架.md
-    - glob: Mypapers/*
-      ignore_no_matches: true
+  - 学习路线: 2026-11-04-ai-infra-agent-roadmap.md
+  - 站点与资料来源: about.md
   - glob: '*.md'
     ignore_no_matches: true
   - glob: 主页/*
     ignore_no_matches: true
-- 🦔 概率图/因果推断:
-  - 概率图模型:
-    - PGM/index.md
-    - 01. Introduction: PGM/CMU10-708PGM01：Introduction.md
-    - 02. Directed Graph Model: PGM/CMU10-708PGM02：GM.md
-    - 03. Exact Inference: PGM/CMU10-708PGM03：Exact Inference.md
-    - glob: PGM/*
+- ⚙️ AI Infra: AIInfra
+- 🤖 Agent: Agents
+- 🧩 多模态 Pipeline: Multimodal
+- 📚 基础与参考:
+  - Foundations/index.md
+  - 计算机系统:
+    - 🐑计算机系统原理:
+      - System/index.md
+      - System/00-intro.md
+      - System/01-mips.md
+      - System/02-calculation.md
+      - System/03-cpu.md
+      - System/04-memory.md
+      - System/05-io.md
+      - glob: System/*
+        ignore_no_matches: true
+    - 🐒 操作系统:
+      - OS/index.md
+      - OS/操作系统0-Linux内核.md
+      - OS/操作系统1-导论.md
+      - OS/操作系统2-进程&线程.md
+      - OS/操作系统3-CPU调度&同步.md
+      - OS/操作系统4-同步和死锁.md
+      - OS/操作系统5-存储.md
+      - OS/操作系统6-文件.md
+      - OS/操作系统7-磁盘和IO.md
+      - glob: OS/*
+        ignore_no_matches: true
+    - 🐓 计算机网络:
+      - Networking/index.md
+      - 计算机网络1-OSI模型: Networking/计算机网络1-OSI模型.md
+      - 计算机网络2-物理层: Networking/计算机网络2-物理层.md
+      - 计算机网络3-数据链路层&MAC: Networking/计算机网络3-数据链路层&MAC.md
+      - 计算机网络4-网络层: Networking/计算机网络4-网络层.md
+      - 计算机网络5-运输层: Networking/计算机网络5-运输层.md
+      - 计算机网络6-应用层: Networking/计算机网络6-应用层.md
+      - 计算机网络7-网络安全: Networking/计算机网络7-网络安全.md
+      - glob: Networking/*
+        ignore_no_matches: true
+    - 🐶 数据库系统:
+      - DB/index.md
+      - ZJU数据库系统课程复习笔记: DB/db.md
+      - CMU15-445 Database Systems:
+        - DB/CMU15-445/index.md
+        - DB/CMU15-445/CMU15-445-01-数据存储.md
+        - DB/CMU15-445/CMU15-445-02-索引.md
+        - DB/CMU15-445/CMU15-445-03-查询处理.md
+        - DB/CMU15-445/CMU15-445-04-查询优化.md
+        - DB/CMU15-445/CMU15-445-05-事务与并发控制.md
+        - glob: DB/CMU15-445/*
+          ignore_no_matches: true
+      - MIT6.830 Database Systems Project:
+        - DB/MIT6.830/MIT6.830-lab1-SimpleDB Overview.md
+        - DB/MIT6.830/MIT6.830-lab2-SimpleDB Operators.md
+        - DB/MIT6.830/MIT6.830-lab3-Query Optimizer.md
+        - DB/MIT6.830/MIT6.830-lab4-Transaction.md
+        - glob: DB/MIT6.830/*
+          ignore_no_matches: true
+      - glob: DB/*
+        ignore_no_matches: true
+        ignore:
+        - /DB/CMU15-445/
+        - /DB/MIT6.830/
+    - CSCI300:
+      - CSCI300/Lecture1-Overview.md
+      - CSCI300/Lecture2-DataInMemory.md
+      - glob: CSCI300/*
+        ignore_no_matches: true
+  - 编程语言:
+    - PL/index.md
+    - C++:
+      - OOP课程笔记: PL/CPP/OOP-Review.md
+      - glob: PL/CPP/*
+        ignore_no_matches: true
+    - Go:
+      - PL/Go/Go-01. Go语言的基础语法.md
+      - PL/Go/Go-02. Go语言的依赖管理与进阶语法.md
+      - glob: PL/Go/*
+        ignore_no_matches: true
+    - glob: PL/*.md
       ignore_no_matches: true
-  - 因果推断:
-    - Causality/index.md
-    - Causality01-因果推断与潜在结果框架: Causality/Causality01-PotentialOutcome.md
-    - Causality02-潜在结果框架的基本假设: Causality/Causality02-Assumptions.md
-    - Causality03-因果图模型: Causality/Causality03-CausalGraph.md
-    - Causality04-后门调整: Causality/Causality04-Intervention&BackdoorAdjustment.md
-    - Causality05-结构因果模型: Causality/Causality05-StructuralCausalModel.md
-    - glob: Causality/*
+    - glob: PL/*/
       ignore_no_matches: true
-- 🕊️ 机器学习/深度学习:
-  - 🐯 机器学习与数据挖掘:
+      ignore:
+      - /PL/CPP/
+      - /PL/Go/
+  - 算法与数据结构:
+    - DS/index.md
+    - 数据结构基础: DS/ds.md
+    - 高级数据结构与算法分析: DS/ads.md
+    - 🐝LeetCode刷题记录:
+      - 数组: Leetcode/Array.md
+      - 字符串: Leetcode/String.md
+      - 栈: Leetcode/Stack.md
+      - 链表: Leetcode/Linklist.md
+      - 堆: Leetcode/Heap.md
+      - 动态规划: Leetcode/DP.md
+      - 前缀和: Leetcode/Prefix.md
+      - 回溯: Leetcode/Backtrack.md
+      - 深度优先搜索: Leetcode/DFS.md
+      - 双指针: Leetcode/TwoPointers.md
+      - 贪心: Leetcode/Greedy.md
+      - 树: Leetcode/Tree.md
+      - 滑动窗口: Leetcode/Windows.md
+      - 位运算: Leetcode/Bit.md
+      - 脑筋急转弯: Leetcode/Trick.md
+      - glob: Leetcode/*
+        ignore_no_matches: true
+    - glob: DS/*
+      ignore_no_matches: true
+  - 统计学习与数据处理:
     - ML/index.md
     - 统计机器学习:
       - 01：机器学习中的基本概念: ML/统计机器学习01：机器学习中的基本概念.md
@@ -70,7 +154,7 @@ nav:
       ignore_no_matches: true
       ignore:
       - /ML/CS246/
-  - 🐰 深度学习:
+  - 深度学习与 NLP:
     - CS231N/index.md
     - CS231N-神经网络与深度学习:
       - 01.kNN和线性分类器: CS231N/Stanford-CS231N-Assignment札记1：kNN和线性分类器.md
@@ -78,24 +162,9 @@ nav:
       - 03.Normalization和DropOut: CS231N/Stanford-CS231N-Assignment札记3：Normalization和DropOut.md
       - 04.卷积神经网络CNN: CS231N/Stanford-CS231N-Assignment札记4：卷积神经网络CNN.md
       - 05.RNN&LSTM与图片描述: CS231N/Stanford-CS231N-Assignment札记5：RNN&LSTM与图片描述.md
-      - 06.Transformer与图片描述: CS231N/Stanford-CS231N-Assignment札记6：Transformer与图片描述.md
       - 07.模型可视化，图像欺诈和GAN: CS231N/Stanford-CS231N-Assignment札记7：模型可视化，图像欺诈和GAN.md
       - 08.自监督学习与课程总结: CS231N/Stanford-CS231N-Assignment札记8：自监督学习与课程总结.md
       - glob: CS231N/*
-        ignore_no_matches: true
-    - CS224W-图机器学习与图神经网络:
-      - CS224W/index.md
-      - 01.导论，传统的图学习方法: CS224W/CS224W-图机器学习01.md
-      - 02.节点嵌入和PageRank: CS224W/CS224W-图机器学习02.md
-      - 03.消息传递机制: CS224W/CS224W-图机器学习03.md
-      - 04.图神经网络基础: CS224W/CS224W-图机器学习04.md
-      - 05.图神经网络的训练和应用，表示能力分析: CS224W/CS224W-图机器学习05.md
-      - 06.知识图谱，知识图谱推理: CS224W/CS224W-图机器学习06.md
-      - 07.频繁子图挖掘: CS224W/CS224W-图机器学习07.md
-      - 08.社区检测: CS224W/CS224W-图机器学习08.md
-      - 09.图生成模型: CS224W/CS224W-图机器学习09.md
-      - 10.图神经网络前沿话题: CS224W/CS224W-图机器学习10.md
-      - glob: CS224W/*
         ignore_no_matches: true
     - CS224N-基于深度学习的自然语言处理:
       - CS224N/index.md
@@ -109,226 +178,49 @@ nav:
       - Assignment4: CS224N/Stanford-CS224N-Assignment4.md
       - glob: CS224N/*
         ignore_no_matches: true
-  - 🐍 论文阅读:
+  - 大模型与多模态论文:
     - Papers-old/index.md
     - 早期论文阅读:
-      - Papers-old/论文阅读笔记01：知识图谱嵌入综述.md
-      - Papers-old/论文阅读笔记02：关系抽取文献综述.md
       - Papers-old/论文阅读笔记03：Transformer.md
-      - Papers-old/论文阅读笔记04：Node2Vec.md
-      - Papers-old/论文阅读笔记05：TransE.md
-      - Papers-old/论文阅读笔记06：TransH.md
-      - Papers-old/论文阅读笔记07：GraphVQA.md
-      - Papers-old/论文阅读笔记08：RotatE.md
-      - Papers-old/论文阅读笔记09：GAN4KGE&KBGAN.md
-      - Papers-old/论文阅读笔记10：AffinityDependentNS.md
-      - Papers-old/论文阅读笔记11：StructureAwareNS.md
-      - Papers-old/论文阅读笔记12：PNS.md
-      - Papers-old/论文阅读笔记13：NSCaching.md
-      - Papers-old/论文阅读笔记14：知识图谱路径推理.md
-      - Papers-old/论文阅读笔记15：GraphTransformer.md
       - Papers-old/论文阅读笔记16：BERT.md
-      - Papers-old/论文阅读笔记17：Rule-Based-KGE.md
-      - Papers-old/论文阅读笔记18：神经符号推理和知识图谱.md
-      - Papers-old/论文阅读笔记19：电商知识图谱预训练.md
-      - Papers-old/论文阅读笔记20：PathCon.md
-      - Papers-old/论文阅读笔记21：FSL4TKG.md
-      - Papers-old/论文阅读笔记22：KG-BERT&K-BERT.md
-      - Papers-old/论文阅读笔记23：Graphformer.md
-      - Papers-old/论文阅读笔记24：多模态知识图谱表示学习.md
       - Papers-old/论文阅读笔记25：SMORE大规模知识图谱系统.md
-      - Papers-old/论文阅读笔记26：K3M多模态商品知识图谱预训练.md
-      - Papers-old/论文阅读笔记27：图对比学习.md
       - Papers-old/论文阅读笔记28：多模态BERT.md
-      - Papers-old/论文阅读笔记29：异构GCN.md
       - Papers-old/论文阅读笔记30：异构分布式机器学习Partial Reduce.md
-      - Papers-old/论文阅读笔记31：大规模知识图谱对齐LargeEA.md
       - Papers-old/论文阅读笔记32：Prompt.md
-      - Papers-old/论文阅读笔记33：结合BERT的知识图谱补全.md
       - glob: Papers-old/*
         ignore_no_matches: true
     - 01-GAN与对比学习的设计: Papers/01-GAN与对比学习的设计.md
     - 02-VAE与CVAE的基本架构: Papers/02-VAE与CVAE的基本架构.md
     - 03-多模态特征的融合与提取: Papers/03-多模态特征的融合与提取.md
-    - 04-因果注意力机制: Papers/04-因果注意力机制.md
     - 05-大语言模型: Papers/05-大语言模型LLM.md
     - 06-大语言模型对齐: Papers/06-大模型Alignment.md
     - 07-以数据为中心的AI: Papers/07-以数据为中心的AI.md
-    - 08-知识图谱预训练: Papers/08-知识图谱预训练.md
     - glob: Papers/*
       ignore_no_matches: true
     - 研究主题: Tricks
-- 🦃️ 数据结构/算法:
-  - DS/index.md
-  - 数据结构基础: DS/ds.md
-  - 高级数据结构与算法分析: DS/ads.md
-  - 🐝LeetCode刷题记录:
-    - 数组: Leetcode/Array.md
-    - 字符串: Leetcode/String.md
-    - 栈: Leetcode/Stack.md
-    - 链表: Leetcode/Linklist.md
-    - 堆: Leetcode/Heap.md
-    - 动态规划: Leetcode/DP.md
-    - 前缀和: Leetcode/Prefix.md
-    - 回溯: Leetcode/Backtrack.md
-    - 深度优先搜索: Leetcode/DFS.md
-    - 双指针: Leetcode/TwoPointers.md
-    - 贪心: Leetcode/Greedy.md
-    - 树: Leetcode/Tree.md
-    - 滑动窗口: Leetcode/Windows.md
-    - 位运算: Leetcode/Bit.md
-    - 脑筋急转弯: Leetcode/Trick.md
-    - glob: Leetcode/*
-      ignore_no_matches: true
-  - glob: DS/*
+  - glob: Foundations/*
     ignore_no_matches: true
-- 🐊 编程语言:
-  - PL/index.md
-  - C++:
-    - OOP课程笔记: PL/CPP/OOP-Review.md
-    - glob: PL/CPP/*
-      ignore_no_matches: true
-  - Java:
-    - PL/Java/Java应用技术1：基础语法.md
-    - PL/Java/Java应用技术2：类和对象.md
-    - PL/Java/Java应用技术3：高级语法特性.md
-    - PL/Java/深入理解JVM-1.md
-    - glob: PL/Java/*
-      ignore_no_matches: true
-  - Go:
-    - PL/Go/Go-01. Go语言的基础语法.md
-    - PL/Go/Go-02. Go语言的依赖管理与进阶语法.md
-    - glob: PL/Go/*
-      ignore_no_matches: true
-  - glob: PL/*.md
-    ignore_no_matches: true
-  - glob: PL/*/
-    ignore_no_matches: true
-    ignore:
-    - /PL/CPP/
-    - /PL/Java/
-    - /PL/Go/
-- 🦖 计算机系统:
-  - 🐑计算机系统原理:
-    - System/index.md
-    - System/00-intro.md
-    - System/01-mips.md
-    - System/02-calculation.md
-    - System/03-cpu.md
-    - System/04-memory.md
-    - System/05-io.md
-    - glob: System/*
-      ignore_no_matches: true
-  - 🐒 操作系统:
-    - OS/index.md
-    - OS/操作系统0-Linux内核.md
-    - OS/操作系统1-导论.md
-    - OS/操作系统2-进程&线程.md
-    - OS/操作系统3-CPU调度&同步.md
-    - OS/操作系统4-同步和死锁.md
-    - OS/操作系统5-存储.md
-    - OS/操作系统6-文件.md
-    - OS/操作系统7-磁盘和IO.md
-    - glob: OS/*
-      ignore_no_matches: true
-  - 🐓 计算机网络:
-    - Networking/index.md
-    - 计算机网络1-OSI模型: Networking/计算机网络1-OSI模型.md
-    - 计算机网络2-物理层: Networking/计算机网络2-物理层.md
-    - 计算机网络3-数据链路层&MAC: Networking/计算机网络3-数据链路层&MAC.md
-    - 计算机网络4-网络层: Networking/计算机网络4-网络层.md
-    - 计算机网络5-运输层: Networking/计算机网络5-运输层.md
-    - 计算机网络6-应用层: Networking/计算机网络6-应用层.md
-    - 计算机网络7-网络安全: Networking/计算机网络7-网络安全.md
-    - glob: Networking/*
-      ignore_no_matches: true
-  - 🐶 数据库系统:
-    - DB/index.md
-    - ZJU数据库系统课程复习笔记: DB/db.md
-    - CMU15-445 Database Systems:
-      - DB/CMU15-445/index.md
-      - DB/CMU15-445/CMU15-445-01-数据存储.md
-      - DB/CMU15-445/CMU15-445-02-索引.md
-      - DB/CMU15-445/CMU15-445-03-查询处理.md
-      - DB/CMU15-445/CMU15-445-04-查询优化.md
-      - DB/CMU15-445/CMU15-445-05-事务与并发控制.md
-      - glob: DB/CMU15-445/*
-        ignore_no_matches: true
-    - MIT6.830 Database Systems Project:
-      - DB/MIT6.830/MIT6.830-lab1-SimpleDB Overview.md
-      - DB/MIT6.830/MIT6.830-lab2-SimpleDB Operators.md
-      - DB/MIT6.830/MIT6.830-lab3-Query Optimizer.md
-      - DB/MIT6.830/MIT6.830-lab4-Transaction.md
-      - glob: DB/MIT6.830/*
-        ignore_no_matches: true
-    - glob: DB/*
-      ignore_no_matches: true
-      ignore:
-      - /DB/CMU15-445/
-      - /DB/MIT6.830/
-  - CSCI300:
-    - CSCI300/Lecture1-Overview.md
-    - CSCI300/Lecture2-DataInMemory.md
-    - glob: CSCI300/*
-      ignore_no_matches: true
-- 🐳 杂谈与总结:
-  - Gossip/index.md
-  - I. 2021年度总结: Gossip/2021年度总结.md
-  - II. 本科前三年的总结: Gossip/本科前三年的总结.md
-  - III. 对软工专业的课程评价和修改意见: Gossip/对软工专业的课程评价和修改意见.md
-  - IV. Python助教体验: Gossip/Python助教体验.md
-  - V. 2022年度总结: Gossip/2022年度总结.md
-  - VI. 写在读研一年之际: Gossip/写在读研一年之际.md
-  - VII. 2023年度总结: Gossip/2023年度总结.md
-  - VIII. 2024年度总结: Gossip/2024年度总结.md
-  - IX. 2025春: Gossip/2025春.md
-  - X. 2025夏: Gossip/2025夏.md
-  - glob: Gossip/*
-    ignore_no_matches: true
-- 🌾 实习与找工:
-  - Jobs/index.md
-  - 2021春招:
-    - 2021春招阿里云与字节教育部门面经: Jobs/2021spring/intern.md
-    - 面试准备:
-      - MySQL知识整理: Jobs/2021spring/intern1.md
-      - 设计模式: Jobs/2021spring/intern2.md
-      - Java语法: Jobs/2021spring/intern3.md
-      - 操作系统与计算机网络: Jobs/2021spring/intern4.md
-      - glob: Jobs/2021spring/intern[0-9]*.md
-        ignore_no_matches: true
-    - glob: Jobs/2021spring/*
-      ignore_no_matches: true
-      ignore:
-      - /Jobs/2021spring/intern[0-9]*.md
-  - 2024年暑期实习应聘记录: Jobs/2024spring/2024年暑期实习应聘记录.md
-  - glob: Jobs/2024spring/*
-    ignore_no_matches: true
-  - glob: Jobs/*
-    ignore_no_matches: true
-    ignore:
-    - /Jobs/2021spring/
-    - /Jobs/2024spring/
+- 🧪 实验项目: Projects
 - glob: '*/'
   ignore_no_matches: true
   ignore:
+  - /AIInfra/
+  - /Agents/
   - /CS224N/
-  - /CS224W/
   - /CS231N/
   - /CSCI300/
-  - /Causality/
   - /DB/
   - /DS/
-  - /Gossip/
-  - /Jobs/
+  - /Foundations/
   - /Leetcode/
   - /ML/
-  - /Mypapers/
+  - /Multimodal/
   - /Networking/
   - /OS/
-  - /PGM/
   - /PL/
-  - /Papers-old/
   - /Papers/
+  - /Papers-old/
+  - /Projects/
   - /System/
   - /Tricks/
   - /主页/

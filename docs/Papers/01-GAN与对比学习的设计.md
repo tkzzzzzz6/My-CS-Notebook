@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Papers/01-GAN%E4%B8%8E%E5%AF%B9%E6%AF%94%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%AE%BE%E8%AE%A1.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # GAN中对比学习模块的设计
 
 这里主要记录一些GAN+对比学习的论文的核心设计与idea中蕴含的想法(也就是他们讲的故事)，来简单学习一下GAN+对比学习要怎么讲出故事。

@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Papers/02-VAE%E4%B8%8ECVAE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # VAE与CVAE的基本架构
 ## VAE与CVAE的基本架构
 > 简单了解一下VAE的设计思路，首先补充一些熟悉的概率论知识，然后记录一下VAE的原论文中涉及到的一些关键的推导和结论。

@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/ML/CS246/Lecture002.%E5%B1%80%E9%83%A8%E6%95%8F%E6%84%9F%E6%80%A7%E5%93%88%E5%B8%8C.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 局部敏感哈希
 
 ## 局部敏感性哈希算法(LSH)

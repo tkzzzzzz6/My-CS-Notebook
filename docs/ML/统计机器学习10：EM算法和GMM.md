@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/ML/%E7%BB%9F%E8%AE%A1%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A010%EF%BC%9AEM%E7%AE%97%E6%B3%95%E5%92%8CGMM.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 统计机器学习10：EM算法和GMM
 
 EM算法的全称是Expectation Maximization，是用于**对含有隐变量的概率模型进行参数极大似然估计的一种迭代算法**，隐变量就是数据集的特征中中没给出但是会影响预测结果的变量。

@@ -1,27 +1,29 @@
-# My-CS-Notebook
+# TK 的 AI 工程笔记
 
 网站：<https://notes.tanke.asia/>
+
+主线为 AI Infra、Agent 与多模态 Pipeline。[学习路线](docs/2026-11-04-ai-infra-agent-roadmap.md)按每周 8–12 小时规划，以一个多模态文档分析 Agent 串起性能、数据和工作流实验。
 
 ## 日常发文
 
 把 Markdown 文章放进 `docs/` 对应目录，提交并推送后，GitHub Actions 会自动生成导航、构建并发布网站。
 
-例如新增 `docs/OS/08-Linux进程调度.md`：
+例如新增 `docs/AIInfra/2026-11-04-inference-baseline.md`：
 
 ```markdown
 ---
-title: Linux 进程调度
+title: 推理服务性能基线
 ---
 
-# Linux 进程调度
+# 推理服务性能基线
 
 文章正文……
 ```
 
 ```bash
-git add "docs/OS/08-Linux进程调度.md"
+git add "docs/AIInfra/2026-11-04-inference-baseline.md"
 # 有新图片时，也添加对应图片文件。
-git commit -m "docs: 新增 Linux 进程调度笔记"
+git commit -m "docs: 新增 推理服务性能基线笔记"
 git push origin master
 ```
 
@@ -42,12 +44,13 @@ git push origin master
 
 | 文章位置 | 自动加入的栏目 |
 | --- | --- |
-| `docs/OS/` | 计算机系统 → 操作系统 |
-| `docs/Papers/` | 机器学习/深度学习 → 论文阅读 |
-| `docs/ML/*.md` | 机器学习与数据挖掘 → 统计机器学习 |
-| `docs/ML/CS246/` | 机器学习与数据挖掘 → CS246 |
-| `docs/PL/Go/` | 编程语言 → Go |
-| `docs/PL/Rust/` 等新语言目录 | 编程语言下的新栏目 |
+| `docs/AIInfra/` | AI Infra |
+| `docs/Agents/` | Agent |
+| `docs/Multimodal/` | 多模态 Pipeline |
+| `docs/Projects/` | 实验项目 |
+| `docs/OS/` | 基础与参考 → 计算机系统 → 操作系统 |
+| `docs/ML/*.md` | 基础与参考 → 统计学习与数据处理 → 统计机器学习 |
+| `docs/PL/Rust/` 等新语言目录 | 基础与参考 → 编程语言下的新栏目 |
 | `docs/` 下全新的一级目录 | 新的一级栏目 |
 
 只有需要调整逻辑分类、指定特殊名称或固定顺序时，才编辑 `docs/.nav.yml`。新子目录也可以添加自己的 `.nav.yml` 来控制该目录的导航。
@@ -77,3 +80,11 @@ mkdocs build
 `docs/CNAME` 保存自定义域名，每次构建都会随网页一起发布。更换域名时同步修改它和 `mkdocs.yml` 的 `site_url`。
 
 源文件提交到 `master`，生成的网页自动发布到 `gh-pages`；部署结果可在仓库的 Actions 页面查看。
+
+## 内容来源与清理
+
+历史课程和论文笔记集中在“基础与参考”，保留文章顶部的来源说明。新路线、栏目入口和计划产出见首页，实际实验结果在完成后另行记录。
+
+2026-11-04 按聚焦方案移除了 83 篇原作者个人、求职、论文宣传及偏离当前主线的旧文章。清理前的 Git 标签为 `archive/pre-ai-refocus-2026-11-04`；可从该标签恢复具体文件。
+
+你自己新建、尚未提交的文章与附件不属于本次旧内容清理范围。

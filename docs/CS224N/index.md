@@ -1,4 +1,13 @@
-# CS224N：DeepLearning for NLP
+---
+title: CS224N 自然语言处理参考资料
+date: '2026-11-04'
+tags:
+- 历史资料
+- 模型基础
+---
 
-- 一个很好的深度学习自然语言处理入门课程，不过我只学习了前面八节课的内容，后面一半的课程感觉讲的内容所处领域比较细分并且没有提供相关的作业，就没有继续学下去，5个assignments只要学前面一半就行，当然这门课的assignments我做的比较随便，很多实验基本就简单过了下测试点，没有真的跑过模型，因为看实验指导上说需要GPU比较难找，就先搁置了
-- 完成的5个assignments的垃圾代码[在这里](https://github.com/Course-Learning-Track-For-Each/CS224N-assignments)
+# CS224N 自然语言处理参考资料
+
+这里保留词向量、序列模型与 Attention-Seq2Seq 的历史课程笔记，作为理解现代语言模型的背景资料。
+
+资料继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook)，原有笔记的作者署名与声明见具体文章。

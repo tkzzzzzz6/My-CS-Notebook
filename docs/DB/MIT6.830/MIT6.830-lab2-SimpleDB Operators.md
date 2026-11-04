@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/DB/MIT6.830/MIT6.830-lab2-SimpleDB%20Operators.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # MIT6.830-lab2：SimpleDB Operators
 
 > MIT6.830 Database Systems课程Project的第二部分，我们需要实现一些数据库系统中基本的算子和对应的Buffer、Page的管理。我们主要需要实现的操作有Filter, Join,  Aggregate, Insert和Delete

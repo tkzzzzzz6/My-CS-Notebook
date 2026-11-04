@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/DB/MIT6.830/MIT6.830-lab3-Query%20Optimizer.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # MIT6.830-lab3：Query Optimizer
 
 > MIT6.830 Database Systems课程Project的第三部分，我们需要实现一些数据库系统中的查询优化的功能，使用数据库提供的统计信息来对嵌套的Join操作进行优化

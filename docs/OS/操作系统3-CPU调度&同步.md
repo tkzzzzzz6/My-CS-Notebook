@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F3-CPU%E8%B0%83%E5%BA%A6%26%E5%90%8C%E6%AD%A5.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 操作系统3：CPU调度
 
 ## Chapter5：CPU Schedule

@@ -1,4 +1,13 @@
-# CS231N:Convolutional Neural Networks for Visual Recognition
+---
+title: CS231N 深度学习参考资料
+date: '2026-11-04'
+tags:
+- 历史资料
+- 模型基础
+---
 
-- 本课程的3个assignments在https://github.com/Course-Learning-Track-For-Each/CS231N-assignments
-- 没有看过slides，因为内容总的来说还是比较基本的，但是这门课的作业很棒，非常推荐做。
+# CS231N 深度学习参考资料
+
+这里保留神经网络、优化、归一化、视觉模型与自监督学习的课程笔记。建议结合当前 PyTorch 文档与实际实验阅读。
+
+资料继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook)，原有笔记的作者署名与声明见具体文章。

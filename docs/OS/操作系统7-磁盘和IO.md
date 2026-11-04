@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/OS/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F7-%E7%A3%81%E7%9B%98%E5%92%8CIO.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 操作系统7：磁盘和I/O
 
 ##Chapter 12：大容量存储系统

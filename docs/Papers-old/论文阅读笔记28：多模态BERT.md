@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/Papers-old/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B028%EF%BC%9A%E5%A4%9A%E6%A8%A1%E6%80%81BERT.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # 论文阅读笔记28：多模态BERT
 
 > BERT模型是NLP领域近几年来最成功的预训练模型之一，而BERT一经提出，很多模仿BERT架构并用于其他的任务中的类BERT模型也不断涌现，这一次读的几篇文章都是多模态BERT相关的内容，分别是[VisualBERT](https://arxiv.org/pdf/1908.03557.pdf)，[VL-BERT](https://arxiv.org/pdf/1908.08530.pdf)和[ViLBERT](https://arxiv.org/pdf/1908.02265.pdf)

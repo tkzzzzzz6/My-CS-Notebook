@@ -1,3 +1,6 @@
+!!! note "历史参考资料"
+    本文继承自[上游笔记库](https://github.com/zwygit2025/My-CS-Notebook/blob/a94d023/docs/DB/MIT6.830/MIT6.830-lab4-Transaction.md)，原有叙述与署名属于对应作者。涉及当前框架和接口时，请结合官方文档核验。
+
 # MIT6.830-lab4：Transaction
 
 > MIT6.830 Database Systems课程Project的第四部分，主要实现一些事务处理和并发相关的功能，我们需要为SimpleDB设计一个二阶段锁的管理器
